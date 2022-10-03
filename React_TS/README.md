@@ -59,7 +59,7 @@
 
 ## Инструкция по запуску проекта
 
-- Клонируйте репозиторий: `git clone https://github.com/bubn0ff/stazherka.git`.
+- Клонируйте репозиторий: `git clone https://github.com/bubn0ff/mvp-portal.git`.
 - Перейдите в папку с проектом `cd react_ts`.
 - Установите зависимости: `npm install`.
 - Запустите проект: `npm start`.
