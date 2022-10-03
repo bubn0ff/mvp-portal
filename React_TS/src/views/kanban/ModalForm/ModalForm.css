@@ -1,0 +1,102 @@
+input,
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal__form-main {
+  min-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.modal__form-base {
+  flex: 0 1 60%;
+  margin-right: 45px;
+}
+
+.modal__form-info {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 10px !important;
+  color: #456C86;
+}
+
+.modal__form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.modal__form-group_base input,
+.modal__form-group_base textarea,
+.modal__form-group_base select {
+  width: 60%;
+}
+
+.modal__form-group_attribute input,
+.modal__form-group_attribute select {
+  width: 65%;
+}
+
+.modal__form-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal__form-star {
+  font-weight: 700;
+  color: tomato;
+}
+
+.modal__form-input,
+.modal__form-textarea,
+.modal__form-select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #282C34;
+  border: 1px solid #dcdcdc;
+}
+
+.modal__form-input:invalid,
+.modal__form-textarea:invalid,
+.modal__form-select:invalid,
+.modal__form-input:invalid:focus,
+.modal__form-textarea:invalid:focus,
+.modal__form-select:invalid:focus {
+  border: 1px solid tomato;
+  outline: tomato;
+}
+
+.modal__form-input[type="text"]:disabled,
+.modal__form-input[type="number"]:disabled {
+  border: 0;
+}
+
+.modal__form-textarea {
+  resize: none;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.modal__form-select {
+  background-color: #fff;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.modal__form-attribute {
+  flex: 0 1 40%;
+}
+
+.modal__form-attribute .modal__form-body {
+  max-height: 330px;
+  overflow-y: auto;
+  padding-right: 5px;
+  scrollbar-width: thin;
+}

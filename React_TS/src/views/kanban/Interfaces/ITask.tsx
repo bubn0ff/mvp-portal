@@ -1,0 +1,16 @@
+export default interface ITask {
+  id: string,
+  avatar?: string,
+  author: string,
+  title: string,
+  description: string,
+  trainee?: string,
+  topic?: string,
+  date: string,
+  column: string,
+  status?: string,
+  type?: string,
+  priority?: string,
+  dedline: string,
+  grade?: string,
+}

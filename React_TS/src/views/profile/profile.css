@@ -1,0 +1,21 @@
+.profile__content{
+  background-color: #fff;
+  text-align: center;
+  padding-top: 70px;
+  width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile__name-page{
+  font-size: 30px;
+  margin: 20px;
+  color: #1890ff;
+}
+
+.profile__ava img{
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 150px;
+}

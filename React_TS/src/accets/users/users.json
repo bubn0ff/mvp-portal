@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "email": "mentor@test.ru",
+      "password": "123",
+      "role": "MENTOR"
+    },
+    {
+      "email": "user@test.ru",
+      "password": "123",
+      "role": "USER"
+    },
+    {
+      "email": "admin@test.ru",
+      "password": "123",
+      "role": "ADMIN"
+    },
+    {
+      "email": "supervisor@test.ru",
+      "password": "123",
+      "role": "SUPERVISOR"
+    }
+  ]
+}

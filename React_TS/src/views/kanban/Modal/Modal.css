@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal__content {
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #282C34;
+  padding: 20px 30px;
+  margin: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 600;
+  color: #282C34;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+
+.modal__close:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.modal__close:active {
+  color: #4B4D92;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.modal__header {
+  border-bottom: 1px solid rgba(34,36,38,.15);
+  padding: 0 10px 15px 0;
+  margin-bottom: 15px;
+  color: #282C34;
+}
+
+.modal__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.modal__title_alarm {
+  color: tomato;
+  text-transform: uppercase;
+}
+
+.modal__subtitle {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.modal__subtitle_alarm {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal__main {
+  position: relative;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__footer {
+  border-top: 1px solid rgba(34,36,38,0.15);
+  padding-top: 10px;
+  position: relative;
+}
+
+.modal__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__text_center {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal__img {
+  max-width: 100%;
+}
+
+.modal__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+
+.modal__button {
+  min-width: 150px;
+  margin: 15px;
+  padding: 12px 32px;
+  background-color: #4B4D92;
+  border: 1px solid #4B4D92;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.7);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal__button:hover {
+  opacity: 0.8;
+}
+
+.modal__button:active {
+  box-shadow: none;
+}
+
+.modal__button:focus {
+  outline: 2px solid yellow;
+}

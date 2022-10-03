@@ -1,0 +1,22 @@
+.kanban__col {
+  border: 1px solid #fff;
+  background-color: #282c34;
+  padding-bottom: 8px;
+  
+  /* это мешало открытию модалок на весь экран */
+  position: static !important;
+}
+
+.kanban__col-wrap {
+  max-height: 72vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.kanban__title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 2;
+}

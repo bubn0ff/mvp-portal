@@ -1,0 +1,6 @@
+/* колонка под карточками задач, в пределах которой возможен dnd */
+.kanban__col-drop {
+  padding: 10px;
+  width: 100%;
+  min-height: 72vh;
+}

@@ -1,0 +1,12 @@
+.kanban {
+  width: 85vw;
+  margin: 0px auto;
+}
+
+.kanban__row {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 75vh;
+  margin: 0 auto !important;
+}
+
