@@ -1,33 +1,16 @@
 import { ChangeEvent, Dispatch, SyntheticEvent, useEffect, useState } from 'react';
 import ITask from '../Interfaces/ITask';
 import { tasksData as toDoColumn } from '../api/data';
-import moment from 'moment';
 import './ModalForm.css';
+import ModelEmptyTaskCard from './model/ModelEmptyTaskCard';
 
-const createID = () => ('' + (Math.random() * Math.random() * 10000).toFixed()).slice(1, 5);
-const dateToday = moment().format('DD.MM.YYYY HH:mm');
 
 export default function ModalForm({ closeModal, item, setType }: IProps) {
   const keyNewItem = localStorage.getItem('newItem');
   const keyCreate = localStorage.getItem('create');
-  const empty = {
-    id: createID(),
-    avatar: 'https://clck.ru/qrjuh',
-    author: 'Admin',
-    title: '',
-    description: '',
-    trainee: '',
-    topic: '',
-    date: dateToday,
-    column: 'К изучению',
-    status: 'Активна',
-    type: '',
-    priority: 'Средний',
-    dedline: '',
-    grade: '1',
-  };
-  const loadedData: ITask = keyNewItem ? JSON.parse(keyNewItem) : (keyCreate ? empty : item);
-  const [newItem, setNewItem] = useState(loadedData);
+  const loadedData: ITask = keyCreate ? ModelEmptyTaskCard : item;
+  const result: ITask = keyNewItem ? JSON.parse(keyNewItem) : loadedData;
+  const [newItem, setNewItem] = useState(result);
 
   useEffect(() => {
     localStorage.setItem('newItem', JSON.stringify(newItem));
@@ -52,7 +35,7 @@ export default function ModalForm({ closeModal, item, setType }: IProps) {
   const closeForm = (e: SyntheticEvent) => {
     e.preventDefault();
     
-    if (newItem === item || newItem === empty) {
+    if (newItem === item || newItem === ModelEmptyTaskCard) {
       closeModal(false);
       setType('read');
       localStorage.clear();

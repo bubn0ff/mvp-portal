@@ -1,10 +1,9 @@
 import { Dispatch } from 'react';
 import ITask from '../Interfaces/ITask';
 import './ModalView.css';
+import reverseString from './utils/reverseString';
 
 export default function ModalView({ closeModal, item, setType }: IProps) {
-  const reverseString = (words: string) => words.split('-').reverse().join('.');
-
   return (
     <>
       <div className="modal__header">
