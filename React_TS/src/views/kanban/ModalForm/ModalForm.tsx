@@ -98,7 +98,7 @@ export default function ModalForm({ closeModal, item, setType }: IProps) {
                     placeholder="например: Создание стикера задачи" name="title"
                     title="Разрешено использовать только русские или латинские слова с пробелами, 
                     не менее 15 символов и не более 50" onChange={e => handleChange(e)}
-                    pattern="^[A-Za-zА-Яа-яЁё\s-]{15,50}" minLength={15} maxLength={50} 
+                    pattern="^[A-Za-zА-Яа-яЁё\s\-]{15,50}" minLength={15} maxLength={50} 
                     value={newItem.title} required autoFocus
                   />
                 </div>
